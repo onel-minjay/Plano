@@ -7,6 +7,7 @@ import Header from '../components/layout/Header';
 import Footer from '../components/layout/Footer';
 import HeroSection from '../components/sections/HeroSection';
 import ProductCarouselSection from '../components/sections/ProductCarouselSection';
+import PhilosophySection from "../components/sections/PhilosophySection.jsx";
 
 // ScrollTrigger 플러그인 등록
 gsap.registerPlugin(ScrollTrigger, useGSAP);
@@ -25,6 +26,7 @@ const HomePage = () => {
                 scrollTrigger: {
                     trigger: section,
                     start: 'top 80%',
+                    toggleActions: 'restart pause resume reverse',
                 }
             });
         });
@@ -36,6 +38,7 @@ const HomePage = () => {
             <main className="flex-grow">
                 <HeroSection />
                 <ProductCarouselSection />
+                <PhilosophySection />
             </main>
             <Footer />
         </div>

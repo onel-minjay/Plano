@@ -82,19 +82,19 @@ const Header = () => {
                 >
                     {/* 스크롤 여부에 따라 햄버거 바 색상도 변경 */}
                     <span className={`w-6 h-0.5 transition-all ${
-                        isOpen || !isScrolled ? 'bg-white' : 'bg-black'
+                        isOpen || isScrolled ? 'bg-black' : 'bg-white'
                     } ${isOpen ? 'rotate-45 translate-y-2' : ''}`} />
                     <span className={`w-6 h-0.5 transition-all ${
-                        isOpen || !isScrolled ? 'bg-white' : 'bg-black'
+                        isOpen || isScrolled ? 'bg-black' : 'bg-white'
                     } ${isOpen ? 'opacity-0' : ''}`} />
                     <span className={`w-6 h-0.5 transition-all ${
-                        isOpen || !isScrolled ? 'bg-white' : 'bg-black'
+                        isOpen || isScrolled ? 'bg-black' : 'bg-white'
                     } ${isOpen ? '-rotate-45 -translate-y-2' : ''}`} />
                 </button>
             </div>
 
             {/* 모바일 메뉴 영역 (기존 코드 유지) */}
-            <nav ref={menuRef} className="lg:hidden fixed inset-0 bg-black text-white z-50 flex items-center justify-center" style={{ clipPath: 'circle(0% at 100% 0%)' }}>
+            <nav ref={menuRef} className="lg:hidden fixed h-screen inset-0 bg-white z-50 flex items-center justify-center" style={{ clipPath: 'circle(0% at 100% 0%)' }}>
                 <ul className="text-center space-y-8">
                     {navLinks.map((item) => (
                         <li key={item}><a href={`#${item.toLowerCase()}`} onClick={() => setIsOpen(false)} className="text-4xl font-bold">{item}</a></li>

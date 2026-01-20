@@ -18,7 +18,7 @@ const HeroSection = () => {
         tl.fromTo(imageRef.current,
             {
                 scale: 1.3, // 시작 크기: 130%
-                filter: 'blur(10px)', // (선택사항) 처음에 살짝 블러를 주면 더 몽환적입니다.
+                filter: 'blur(10px)',
             },
             {
                 scale: 1,   // 끝 크기: 100%
@@ -59,7 +59,7 @@ const HeroSection = () => {
                 {/*<div className="absolute inset-0 bg-gradient-to-r from-white/30 to-transparent" />*/}
             </div>
 
-            <div className="container flex items-center justify-center px-6 relative z-10">
+            <div className="flex items-center justify-center w-full px-6 relative z-10">
                 <div className="hero-content flex flex-col items-center justify-center max-w-2xl text-white">
                     <p className="text-3xl md:text-4xl mb-3 font-extrabold leading-tight opacity-0">{HERO_DATA.subTitle}</p>
                     <h1 className="text-5xl md:text-6xl font-bold leading-tight opacity-0 mb-8">{HERO_DATA.mainTitle}</h1>
