@@ -40,16 +40,6 @@ const PhilosophySection = () => {
         );
     }, { scope: containerRef });
 
-    // 특정 구분자(^n)를 기준으로 문자열을 나누어 처리하는 로직
-    const renderTitle = (title) => {
-        return title.split('^n').map((line, index, array) => (
-            <React.Fragment key={index}>
-                {line}
-                {index !== array.length - 1 && <br />}
-            </React.Fragment>
-        ));
-    };
-
     return (
         <section
             ref={containerRef}
@@ -74,8 +64,8 @@ const PhilosophySection = () => {
                   <span className="inline-block text-3xl font-bold mb-3 opacity-40 ">
                     {PHILOSOPHY_DATA.subTitle}
                   </span>
-                    <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-tight">
-                        {renderTitle(PHILOSOPHY_DATA.mainTitle)}
+                    <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-tight whitespace-pre-wrap">
+                        {PHILOSOPHY_DATA.mainTitle}
                     </h2>
                     <p className="text-md md:text-lg text-gray-400 leading-relaxed">
                         {PHILOSOPHY_DATA.description}
