@@ -8,7 +8,7 @@ export const HERO_DATA = {
 
 export const PHILOSOPHY_DATA = {
     subTitle: "Plano",
-    mainTitle: "플라노는 자연의 원료로 플라스틱을 대체합니다.",
+    mainTitle: "플라노는 자연의 원료로^n 플라스틱을 대체합니다.",
     description: "자연 그대로를 활용하여, 플라노와 함께라면 일상 속에서 친환경 소재를 통해 자연을 보존하게 될 것입니다.",
     image: "/images/philosophy-img.jpg" // 이미지 경로 확인 필요
 };
@@ -44,7 +44,7 @@ export const MOCK_PRODUCTS = [
 export const SITE_CONFIG = {
     companyName: "Plano",
     contact: {
-        address: "경기도 남양주시 화도읍 폭포로 207-36",
+        address: "경기도 화성시 샘플로 231-23",
         email: "proposal@plano.com",
         fax: "(82) 0303-3440-7612"
     }
