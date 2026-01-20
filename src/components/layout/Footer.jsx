@@ -20,7 +20,7 @@ const Footer = () => {
                     <h2 className="text-5xl font-bold tracking-tight text-gray-900">
                         {SITE_CONFIG.companyName}
                     </h2>
-                    <button className="flex items-center gap-2 group text-sm font-bold uppercase tracking-widest">
+                    <button className="flex items-center gap-2 group text-sm font-bold uppercase tracking-widest cursor-pointer">
                         CONTACT
                         <span className="w-8 h-8 rounded-full bg-black text-white flex items-center justify-center group-hover:translate-x-1 transition-transform">
               →
