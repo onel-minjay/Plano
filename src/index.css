@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@source "../src";
+
+/* 폰트 설정, 공통 스타일은 이 아래에 작성 */
+:root {
+    font-family: 'Pretendard', system-ui, sans-serif;
+}
+
+body {
+    @apply antialiased text-gray-900 bg-white;
+}
